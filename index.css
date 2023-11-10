@@ -1,0 +1,163 @@
+
+body{
+    margin: 0;
+    background-color: #f2f4f3;
+
+}
+a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+}
+li{
+    list-style: none;
+}
+a:hover{
+    color: orange;
+}
+/*Header*/
+header{
+    position: relative;
+}
+.navText{
+    font-size:50px; 
+    padding-top: 10px;
+    font-family:"American Typewriter", serif;
+    color: #fff;
+}
+.nav-bar{
+    height: 90px;
+    background-color:#1a411d;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    display: flex;
+
+}
+.nav-bar .links{
+    display: flex;
+    gap: 2rem;
+    padding-right: 10px;
+
+}
+.nav-bar .toggleBtn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.actionBtn{
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale .2 ease;
+
+}
+.actionBtn:hover{
+    scale: 1.07;
+    color: #fff;
+
+}
+
+.left-navBar{
+    display: flex;
+    flex: 1;
+}
+/* Resposive Design*/
+@media (max-width:980px) {
+    .nav-bar .links,
+    .nav-bar .actionBtn{
+        display: none;
+        padding-right: 10px;
+    }
+    .nav-bar .toggleBtn{
+        display: block;
+
+    }
+}
+.bodyContent{
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.introduction{
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 80vw;
+}
+.bodyContent .productLinks{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+
+}
+.bodyContent .productLinks a{
+    color: grey;
+
+}
+.bodyContent .productLinks a:hover{
+    color: orange;
+
+}
+.introText{
+    flex: 3;
+    color: black;
+    font-size: 3vh;
+    
+}
+.imgDiv{
+    display: flex;
+    flex: 4;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:smooth;
+    border-color: #6f1d1b;
+    border-width: 12px;
+    border-style: solid;
+    aspect-ratio: 3/2;
+}
+
+.imgIntro{
+    max-width: 100%;
+    object-fit: contain;
+    background-image: "/Img/panElote.png";
+    margin: none;
+    display: block;
+    height: auto;
+    scroll-snap-align: start;
+    
+}
+footer{
+    height: 10vh;
+    width: 100vw;
+    min-height: 20vh;
+
+}
+.footerSMedia{
+    height: 35%;
+    width: 100vw;
+    background-color: #adc178;
+}
+.footerInfo{
+    width: 100vw;
+    height: 65%;
+    background-color:#1a411d;
+    text-align: center;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

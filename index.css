@@ -128,12 +128,12 @@ header{
     border-width: 12px;
     border-style: solid;
     aspect-ratio: 3/2;
+    width: 50vw;
 }
 
 .imgIntro{
     max-width: 100%;
     object-fit: contain;
-    background-image: "/Img/panElote.png";
     margin: none;
     display: block;
     height: auto;
@@ -141,10 +141,18 @@ header{
     
 }
 .sliderNav{
-
+    display: flex;
+    flex: 4;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:smooth;
+    border-color: #6f1d1b;
+    border-width: 12px;
+    border-style: solid;
+    aspect-ratio: 3/2;
 }
-.sliderNav a {
-     
+.sliderNav des {
+    display: block;
 }
 footer{
     height: 10vh;
@@ -166,4 +174,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#slide1:active {
+    background-color: aqua;
 }

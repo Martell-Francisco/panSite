@@ -140,6 +140,12 @@ header{
     scroll-snap-align: start;
     
 }
+.sliderNav{
+
+}
+.sliderNav a {
+     
+}
 footer{
     height: 10vh;
     width: 100vw;
